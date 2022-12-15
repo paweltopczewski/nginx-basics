@@ -87,3 +87,4 @@ echo "Run LB"
 echo ""
 echo ""
 echo ""
+sudo docker run -it --rm -d -p 8080:80 --name LB -v ~/nginx-basic/ReverseLB:/usr/share/nginx/html nginx
