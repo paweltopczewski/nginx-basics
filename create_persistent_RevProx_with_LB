@@ -9,6 +9,10 @@ echo "Stopping old docker images"
 docker stop LB web1 web2 web3
 echo "removing old nginx-basic directory"
 rm -rf $docDIR/nginx-basic
+docker rm LB
+docker rm web1
+docker rm web2
+docker rm web3
 echo "done"
 echo ""
 echo ""
