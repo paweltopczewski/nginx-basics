@@ -1,4 +1,8 @@
 #!/bin/bash
+#this is non persistent configuration. After reboot containers will not start.
+#You will need to use command alike "sudo docker start <name of contianer".
+#ex. sudo docker start web1
+
 echo "Get actual working directory where docker volumes will be installed"
 docDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 echo $docDIR
